@@ -52,3 +52,61 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+.start-adventure-button {
+  display: inline-block;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1f7aff, #0d4fe0);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 0.8rem 1.3rem;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(13, 79, 224, 0.24);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.start-adventure-button:hover,
+.start-adventure-button:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(13, 79, 224, 0.3);
+}
+
+.start-adventure-button:active {
+  transform: translateY(0);
+  box-shadow: 0 7px 14px rgba(13, 79, 224, 0.25);
+}
+
+.simulation-game {
+  display: grid;
+  gap: 1rem;
+}
+
+.simulation-controls {
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem;
+  max-width: 540px;
+}
+
+#world-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #d0d7de;
+  background: #2d6ab8;
+  image-rendering: pixelated;
+}
+
+@media (max-width: 544px) {
+  .start-adventure-button {
+    width: 100%;
+    text-align: center;
+  }
+}
